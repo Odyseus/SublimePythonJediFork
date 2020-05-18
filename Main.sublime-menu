@@ -1,0 +1,32 @@
+[{
+    "caption": "Preferences",
+    "mnemonic": "n",
+    "id": "preferences",
+    "children": [{
+        "caption": "Package Settings",
+        "mnemonic": "P",
+        "id": "package-settings",
+        "children": [{
+            "caption": "SublimePythonJediFork",
+            "children": [{
+                "caption": "Settings",
+                "command": "edit_settings",
+                "args": {
+                    "base_file": "${packages}/SublimePythonJediFork/SublimePythonJediFork.sublime-settings",
+                    "default": "// SublimePythonJediFork Settings - User\n{\n\t$0\n}\n"
+                }
+            }, {
+                "caption": "Key Bindings",
+                "command": "edit_settings",
+                "args": {
+                    "base_file": "${packages}/SublimePythonJediFork/Default ($platform).sublime-keymap",
+                    "default": "${packages}/User/Default ($platform).sublime-keymap"
+                }
+            }, {
+                "caption": "-"
+            }, {
+                "command": "sublime_python_jedi_fork_toggle_logging_level"
+            }]
+        }]
+    }]
+}]

@@ -1,0 +1,52 @@
+{
+    "logging_level": "ERROR",
+    "commands_scope": "source.python - string - comment",
+
+    // You can set a path to your python virtualenv,
+    // for example `/home/user/.virtualenvs/myenv)`.
+    // Note: Interpreter path would be found automaticaly
+    "python_virtualenv": {
+        "linux": "",
+        "osx": "",
+        "windows": "",
+    },
+
+    // You can set a path to your python interpreter,
+    // for example `/home/user/.virtualenvs/myenv/bin/python)`.
+    "python_interpreter": {
+        "linux": "",
+        "osx": "",
+        "windows": "",
+    },
+
+    // Additional python package paths.
+    "python_package_paths": {
+        "linux": [],
+        "osx": [],
+        "windows": [],
+    },
+
+    // Which function arguments to insert in autocompletion:
+    // "all" - all
+    // "required" - those with no default value (that are required)
+    // "" - none
+    "auto_complete_function_params": "required",
+
+    // Which completions to show:
+    // "all" - both jedi's and sublime's
+    // "jedi" - only jedi's
+    // "default" - only jedi's if it has something to show, otherwise sublime's
+    "sublime_completions_visibility": "all",
+
+    // How long (in milliseconds) we should wait for a completion
+    "completion_timeout": 10,
+
+    // SublimeREPL integration
+    "enable_in_sublime_repl": false,
+
+    // Return fuzzy completions from Jedi.
+    "fuzzy_jedi_completions": false,
+
+    // Only show completions after character that matches this regex
+    "only_complete_after_regex": ""
+}
